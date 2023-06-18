@@ -4,14 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      .content {
+        margin-bottom: 30px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .course {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .course-item {
+        width: 300px;
+        border-radius: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .course-item h2 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .course-item p {
+        line-height: 1.5;
+        letter-spacing: 1px;
+      }
+
+      .jquery-deatil {
+        align-self: flex-start;
+        line-height: 1.5;
+        letter-spacing: 1px;
+      }
+
+      ul {
+        list-style: outside;
+      }
+
+      .jquery-deatil ul {
+        padding-left: 20px;
+      }
+    </style>
   </head>
   <body>
     <div class="wrap">
       <div class="header">
         <img src="images/logo.png" alt="" />
       </div>
-      <div class="content"></div>
+      <div class="content">
+        <div class="course">
+          <div class="course-item">
+            <img src="./images/html.png" alt="html" />
+            <h2>HTML5基礎教學</h2>
+            <p>
+              主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，暸解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。
+            </p>
+          </div>
+          <div class="course-item">
+            <img src="./images/rwd.png" alt="rwd" />
+            <h2>響應式網站設計</h2>
+            <p>
+              響應式網站設計（Responsive Web
+              Design），在目前大多使用者均是以手機瀏覽的情況下，響應式網站已是必備的。六角學院將會提供業界響應式開發方法，讓學生暸解行動版開發技巧。
+            </p>
+          </div>
+          <div class="course-item">
+            <img src="./images/jQuery.png" alt="jQuery" />
+            <h2>jQuery實戰教學</h2>
+            <div class="jquery-deatil">
+              <p>本課程有以下特色</p>
+              <ul>
+                <li>暸解變數的使用方法</li>
+                <li>學習並操作DOM</li>
+                <li>學習基本數學運算方法</li>
+                <li>套件的操作及運用</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="footer">
         <p>六角表尾</p>
       </div>
