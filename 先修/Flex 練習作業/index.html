@@ -49,19 +49,59 @@
         letter-spacing: 1px;
       }
 
-      ul {
+      .jquery-deatil ul {
         list-style: outside;
+        padding-left: 20px;
       }
 
-      .jquery-deatil ul {
-        padding-left: 20px;
+      .menu ul {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .menu ul li {
+        margin-right: 10px;
+      }
+
+      .a-button {
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+        font-weight: 1000;
+        color: #2bbd7e;
+        padding: 20px;
+      }
+
+      .a-button:hover {
+        background-color: #2bbd7e;
+        color: aliceblue;
       }
     </style>
   </head>
   <body>
     <div class="wrap">
       <div class="header">
-        <img src="images/logo.png" alt="" />
+        <div>
+          <img src="images/logo.png" alt="LOGO" />
+        </div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a
+                class="a-button"
+                href="#"
+                style="border-bottom: 2px solid #2bbd7e"
+                >首頁</a
+              >
+            </li>
+            <li>
+              <a href="#" class="a-button">產品介紹</a>
+            </li>
+            <li>
+              <a href="#" class="a-button">聯絡我們</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="content">
         <div class="course">
