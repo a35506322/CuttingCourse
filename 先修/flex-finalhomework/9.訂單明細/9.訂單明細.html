@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      .container {
+        width: 310px;
+        padding: 5px;
+        margin: 0 auto;
+      }
+
+      .title {
+        background-color: #e7eeea;
+        display: flex;
+        justify-content: center;
+        padding: 25px 0px;
+      }
+
+      .title h3 {
+        color: #829886;
+        font-size: 32px;
+        font-weight: bold;
+      }
+
+      .content {
+        padding: 20px;
+      }
+
+      .bill-content {
+        color: #829886;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .total-content {
+        color: #829886;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .bill-container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .bill-container:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      .product-container {
+        display: flex;
+        margin-bottom: 15px;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .product-content-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 18px;
+      }
+
+      .product-content-container .product-content:first-child {
+        margin-bottom: 10px;
+      }
+
+      .product-content {
+        color: #829886;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="title">
+          <h3>訂單摘要</h3>
+        </div>
+        <div class="content">
+          <div class="bill-container">
+            <span class="bill-content">小計</span>
+            <span class="bill-content">NT$ 2,700</span>
+          </div>
+          <div class="bill-container">
+            <span class="bill-content">運費</span>
+            <span class="bill-content">NT$ 300</span>
+          </div>
+          <div class="bill-container">
+            <span class="total-content">總計</span>
+            <span class="total-content">NT$ 3,000</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="title">
+          <h3>購物清單</h3>
+        </div>
+        <div class="content">
+          <div class="product-container">
+            <img
+              src="https://hexschool.github.io/flexImgUrl/9/pic.png"
+              alt=""
+            />
+            <div class="product-content-container">
+              <p class="product-content" style="font-size: 16px">
+                焦糖馬卡龍 (2)
+              </p>
+              <p class="product-content" style="font-size: 20px">NT$ 900</p>
+            </div>
+          </div>
+          <div class="product-container">
+            <img
+              src="https://hexschool.github.io/flexImgUrl/9/pic.png"
+              alt=""
+            />
+            <div class="product-content-container">
+              <p class="product-content" style="font-size: 16px">
+                焦糖馬卡龍 (2)
+              </p>
+              <p class="product-content" style="font-size: 20px">NT$ 900</p>
+            </div>
+          </div>
+          <div class="product-container">
+            <img
+              src="https://hexschool.github.io/flexImgUrl/9/pic.png"
+              alt=""
+            />
+            <div class="product-content-container">
+              <p class="product-content" style="font-size: 16px">
+                焦糖馬卡龍 (2)
+              </p>
+              <p class="product-content" style="font-size: 20px">NT$ 900</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

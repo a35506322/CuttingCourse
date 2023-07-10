@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 1150px;
+        margin: 0 auto;
+        background-color: white;
+      }
+
+      .logo {
+        background-color: #e7eeea;
+        padding: 300px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo img {
+        margin-bottom: 35px;
+      }
+
+      .title {
+        color: #354e3b;
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+
+      .menu {
+        padding: 20px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .menu ul {
+        display: flex;
+      }
+
+      .menu ul li {
+        font-size: 16px;
+      }
+
+      .menu ul li:not(:last-child) {
+        margin-right: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img
+          src="https://hexschool.github.io/flexImgUrl/7/headerLogo.png"
+          alt=""
+        />
+        <h1 class="title">今天是個吃甜點的好日子</h1>
+      </div>
+      <div class="menu">
+        <img
+          src="https://hexschool.github.io/flexImgUrl/7/footerLogo.png"
+          alt=""
+        />
+        <ul>
+          <li>回首頁</li>
+          <li>關於我們</li>
+          <li>產品介紹</li>
+          <li>聯絡我們</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

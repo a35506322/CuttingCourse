@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      .container {
+        width: 900px;
+        background-color: #37523d;
+        padding: 12px;
+        margin: 0 auto;
+      }
+
+      .card {
+        background-color: white;
+      }
+
+      .title {
+        background-color: #e7eeea;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 30px;
+      }
+
+      .title-more {
+        color: #37523d;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .content-container {
+        background-color: white;
+        padding: 30px 50px;
+        display: flex;
+      }
+
+      h3 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      a {
+        color: #37523d;
+        font-size: 20px;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 50px;
+      }
+
+      .a-container {
+        display: flex;
+      }
+
+      .a-container a:first-child {
+        margin-right: 10px;
+      }
+
+      .content div h3 {
+        margin-top: 25px;
+      }
+
+      .content div p {
+        font-weight: 600;
+        font-size: 16px;
+        margin-top: 30px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="title">
+          <img src="https://hexschool.github.io/flexImgUrl/6/logo.png" alt="" />
+          <p class="title-more">more</p>
+        </div>
+        <div class="content-container">
+          <img src="https://hexschool.github.io/flexImgUrl/6/pic.png" alt="" />
+          <div class="content">
+            <div>
+              <h3>想吃甜點　是不需要理由的</h3>
+              <p>
+                青山依舊在，幾度夕陽紅。慣看秋月春風。一壺酌酒喜相逢，浪花淘盡英雄，是非成敗轉頭空，滾滾長江東逝水，白髮漁橋江煮上，古今多少事，<br />
+                青山依舊在，幾度夕陽紅。慣看秋月春風。一壺酌酒喜相逢，浪花淘盡英雄，是非成敗轉頭空，滾滾長江東逝水，白髮漁橋江煮上，古今多少事，
+              </p>
+            </div>
+            <ul class="a-container">
+              <li><a href="#">FB 分享</a></li>
+              <li><a href="#">IG 分享</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
